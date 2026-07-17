@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Recursos, herramientas y actividades pensadas para acompaÃ±ar la dislexia." />
+    <title>Lectura Clara | Recursos para la dislexia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="LÃºmina, inicio"><img src="lumina.png" alt="LÃºmina: Iluminando tu camino en la lectura" /></a>
+      <nav aria-label="NavegaciÃ³n principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#para-ti">Para ti</a>
+        <a href="#iniciar-sesion">Iniciar sesiÃ³n</a>
+        <a class="nav-cta" href="#registro">Crear cuenta</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">APRENDER A TU MANERA</p>
+          <h1>Cada historia enciende una <em>posibilidad.</em></h1>
+          <p class="lead">En LÃºmina acompaÃ±amos a niÃ±os, jÃ³venes y familias en recursos de lectura diseÃ±ados para comprender, disfrutar y crecer.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#registro">Acceder a los recursos <span aria-hidden="true">â†’</span></a>
+            <a class="button button-text" href="#recursos">Ver cÃ³mo funciona</a>
+          </div>
+          <p class="microcopy">Registro gratuito con correo electrÃ³nico.</p>
+        </div>
+        <figure class="hero-art" style="margin:0; display:flex; align-items:center; justify-content:center; background:#062f62; box-shadow:0 16px 35px rgba(6,54,111,.22);">
+          <img src="lumina.png" alt="LÃºmina: Iluminando tu camino en la lectura" style="width:82%; height:82%; display:block; object-fit:contain;" />
+        </figure>
+      </section>
+
+      <section id="recursos" class="resources section-wrap">
+        <div class="section-heading">
+          <p class="eyebrow">UNA BIBLIOTECA PARA ACOMPAÃ‘ARTE</p>
+          <h2>Encuentra lo que necesitas hoy.</h2>
+          <p>Materiales descargables y propuestas prÃ¡cticas diseÃ±adas para que aprender sea mÃ¡s amable.</p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card coral"><div class="icon">â–¤</div><h3>Herramientas</h3><p>GuÃ­as, plantillas y apoyos para organizar, leer y escribir con confianza.</p><a href="#registro">Explorar herramientas <span>â†’</span></a></article>
+          <article class="resource-card yellow"><div class="icon">âœŽ</div><h3>Actividades</h3><p>Ejercicios breves y creativos para practicar de forma divertida.</p><a href="#registro">Ver actividades <span>â†’</span></a></article>
+          <article class="resource-card blue"><div class="icon">â™§</div><h3>Para acompaÃ±ar</h3><p>Ideas claras para familias y docentes que quieren apoyar mejor.</p><a href="#registro">Conocer recursos <span>â†’</span></a></article>
+        </div>
+      </section>
+
+      <section id="para-ti" class="audiences">
+        <div class="section-wrap audience-inner">
+          <div><p class="eyebrow">HECHO PARA COMPARTIR</p><h2>Un espacio para cada persona que aprende.</h2></div>
+          <div class="audience-list">
+            <div><span class="audience-number">01</span><h3>Personas con dislexia</h3><p>Recursos respetuosos que te ayudan a encontrar tus propias estrategias.</p></div>
+            <div><span class="audience-number">02</span><h3>Familias</h3><p>Ideas para acompaÃ±ar desde la paciencia, la comprensiÃ³n y el juego.</p></div>
+            <div><span class="audience-number">03</span><h3>Docentes</h3><p>Material adaptable para crear experiencias de aprendizaje inclusivas.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="registro" class="signup section-wrap">
+        <div class="signup-copy"><p class="eyebrow">EMPIEZA HOY</p><h2>Tus recursos te estÃ¡n esperando.</h2><p>Crea tu cuenta gratuita y desbloquea herramientas y actividades descargables.</p><ul><li>Acceso inmediato a la biblioteca</li><li>Materiales para usar a tu ritmo</li><li>Sin costo de registro</li></ul></div>
+        <div class="account-forms">
+          <form id="signup-form" class="signup-form">
+            <h3>Crea tu cuenta</h3>
+            <label for="name">Tu nombre</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Escribe tu nombre" required />
+            <label for="email">Correo electrÃ³nico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required />
+            <label for="signup-password">Crea una contraseÃ±a</label><input id="signup-password" name="signup-password" type="password" autocomplete="new-password" minlength="8" placeholder="MÃ­nimo 8 caracteres" required />
+            <label class="check"><input type="checkbox" required /> <span>Acepto recibir informaciÃ³n sobre nuevos recursos.</span></label>
+            <button class="button button-primary" type="submit">Crear cuenta gratis <span aria-hidden="true">â†’</span></button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+          <form id="login-form" class="login-form">
+            <p class="eyebrow">Â¿YA TIENES CUENTA?</p>
+            <h3 id="iniciar-sesion">Iniciar sesiÃ³n</h3>
+            <p>Entra para acceder a tus recursos, herramientas y actividades.</p>
+            <label for="login-email">Correo electrÃ³nico</label><input id="login-email" name="login-email" type="email" autocomplete="email" placeholder="tu@email.com" required />
+            <label for="password">ContraseÃ±a</label><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Tu contraseÃ±a" required />
+            <button class="button button-secondary" type="submit">Entrar a mis recursos <span aria-hidden="true">â†’</span></button>
+            <a class="forgot" href="#registro">Â¿Olvidaste tu contraseÃ±a?</a>
+            <p id="login-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="biblioteca" class="library" hidden aria-labelledby="library-title">
+        <div class="section-wrap">
+          <div class="library-heading">
+            <div><p class="eyebrow">TU ESPACIO PERSONAL</p><h2 id="library-title">Biblioteca de recursos</h2><p>Elige un material y descÃ¡rgalo para usarlo cuando lo necesites.</p></div>
+            <button id="logout" class="logout" type="button">Cerrar sesiÃ³n</button>
+          </div>
+          <div class="library-grid">
+            <article class="library-card"><span class="file-tag">PDF Â· GUÃA</span><div class="library-icon coral">Aa</div><h3>GuÃ­a de lectura clara</h3><p>Ideas sencillas para que leer se sienta mÃ¡s cÃ³modo.</p><button class="download" type="button">Descargar <span aria-hidden="true">â†“</span></button></article>
+            <article class="library-card"><span class="file-tag">PDF Â· ACTIVIDAD</span><div class="library-icon yellow">âœŽ</div><h3>Juego de palabras</h3><p>Actividad breve para practicar sonidos, letras y vocabulario.</p><a class="download" href="encuentra-la-palabra-correcta.pdf" download>Descargar <span aria-hidden="true">â†“</span></a></article>
+            <article class="library-card"><span class="file-tag">PDF Â· PLANTILLA</span><div class="library-icon blue">â–¤</div><h3>Planificador semanal</h3><p>Organiza tus tareas en pequeÃ±os pasos y a tu propio ritmo.</p><button class="download" type="button">Descargar <span aria-hidden="true">â†“</span></button></article>
+            <article class="library-card"><span class="file-tag">PDF Â· FAMILIAS</span><div class="library-icon lavender">â™¥</div><h3>AcompaÃ±ar con calma</h3><p>Recomendaciones prÃ¡cticas para apoyar desde casa.</p><button class="download" type="button">Descargar <span aria-hidden="true">â†“</span></button></article>
+            <article class="library-card"><span class="file-tag">PDF Â· DOCENTES</span><div class="library-icon green">âœ¦</div><h3>Clase inclusiva</h3><p>Actividades y propuestas para acompaÃ±ar el aprendizaje en el aula.</p><a class="download" href="actividades-en-clase-ninos.pdf" download>Descargar actividades <span aria-hidden="true">â†“</span></a></article>
+            <article class="library-card request-card"><div class="library-icon outline">+</div><h3>Â¿QuÃ© te gustarÃ­a encontrar?</h3><p>Seguiremos agregando materiales para acompaÃ±arte mejor.</p><a href="mailto:hola@lecturaclara.com">Sugerir un recurso <span aria-hidden="true">â†’</span></a></article>
+          </div>
+          <p id="download-message" class="download-message" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#inicio"><img src="lumina.png" alt="LÃºmina: Iluminando tu camino en la lectura" /></a><p>Aprender tambiÃ©n puede sentirse bien.</p><p>Â© 2026 LÃºmina</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
